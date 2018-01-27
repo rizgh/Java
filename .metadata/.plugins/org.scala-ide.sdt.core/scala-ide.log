@@ -1,0 +1,16 @@
+2018-01-27 06:20:11,284 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:11 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pramati.com: The target server failed to respond
+2018-01-27 06:20:11,286 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:11 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: Retrying request to {s}->https://www.pramati.com
+2018-01-27 06:20:14,230 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:14 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pramati.com: The target server failed to respond
+2018-01-27 06:20:14,230 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:14 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: Retrying request to {s}->https://www.pramati.com
+2018-01-27 06:20:17,238 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:17 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://www.pramati.com: The target server failed to respond
+2018-01-27 06:20:17,238 ERROR [Worker-4] - System.err - Jan 27, 2018 6:20:17 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: Retrying request to {s}->https://www.pramati.com
+2018-01-27 06:24:24,046 ERROR [Worker-14] - System.err - Jan 27, 2018 6:24:24 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: I/O exception (java.net.SocketException) caught when processing request to {}->http://dl.bintray.com: Socket closed
+2018-01-27 06:24:24,049 ERROR [Worker-14] - System.err - Jan 27, 2018 6:24:24 AM org.apache.http.impl.client.DefaultRequestDirector tryExecute
+INFO: Retrying request to {}->http://dl.bintray.com
