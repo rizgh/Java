@@ -7,14 +7,13 @@ phases:
       - echo Entered the install phase...
       - apt-get update -y
       - apt-get install -y maven
-  
+      - mvn -v
     
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
       - unset M2_HOME
-      - mvn package
       - mvn clean install
   post_build:
     commands:
