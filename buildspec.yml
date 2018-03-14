@@ -1,6 +1,7 @@
 version: 0.2
-  
-  
+env:
+  variables:
+     - M3_HOME: /usr/bin/mvn
 
 phases:
   install:
@@ -14,6 +15,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
+      - unset M2_HOME
       - mvn clean install
   post_build:
     commands:
