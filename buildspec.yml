@@ -12,10 +12,7 @@ phases:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
-      - wget http://www-us.apache.org/dist/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
-      - tar -xvf apache-maven-3.5.3-bin.tar.gz -c /usr/local/apache-maven
-      - ls /usr/local/apache-maven
-      
+      - apt-get install maven3
       - mvn -v
     
   build:
