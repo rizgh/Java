@@ -1,10 +1,6 @@
 version: 0.2
 
-env:
-  variables:
-    M2_HoME: /usr/local/apache-maven/apache-maven-3.3.9
-    M2: $M2_HOME/bin
-    PATH: $M2\:$PATH
+
     
     
 phases:
