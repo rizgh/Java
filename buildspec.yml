@@ -1,19 +1,26 @@
 version: 0.2
 
-
+env:
+  variables:
+    M2_HoME: /usr/local/apache-maven/apache-maven-3.3.9
+    M2: $M2_HOME/bin
+    PATH: $M2\:$PATH
+    
+    
 phases:
   install:
     commands:
       - echo Entered the install phase...
       - apt-get update -y
-      - apt-get install -y maven
+      - wget http://www-us.apache.org/dist/maven/maven-3/3.5.3/binaries/apache-maven-3.5.3-bin.tar.gz
+      - tar -xvf apache-maven-3.5.3-bin.tar.gz
+      
       - mvn -v
     
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - unset M2_HOME
       - mvn clean install
   post_build:
     commands:
@@ -22,7 +29,7 @@ phases:
       - ls
 artifacts:
   files:
-    - target/*.war
+    - target/spring-boot-web-jsp-1.0.war
   discard-paths: yes
 cache:
   paths:
