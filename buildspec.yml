@@ -6,8 +6,9 @@ version: 0.2
 phases:
   install:
     commands:
+      - set -x
       - apt-get update -y 
-      - apt-get install maven
+      - apt-get install maven -y
       
   build:
     commands:
