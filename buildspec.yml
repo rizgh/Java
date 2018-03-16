@@ -3,14 +3,7 @@ version: 0.2
 
     
     
-phases:
-  install:
-    commands:
-      - echo Entered the install phase...
-      - apt-get update -y
-      - apt-get install maven3
-      - mvn -v
-    
+phases:    
   build:
     commands:
       - echo Entered the build phase...
@@ -20,7 +13,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
-      - ls
+      - echo 'build successful'
 artifacts:
   files:
     - target/spring-boot-web-jsp-1.0.war
