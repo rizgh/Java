@@ -3,6 +3,11 @@ os: linux
 files:
   - source: spring-boot-web-jsp-1.0.war
     destination: /home/ubuntu/java_app
+permissions:
+  - object: /home/ubuntu
+    owner: root
+    group: root
+    mode: 777
 hooks:
   BeforeInstall:
     - location: stop.sh
