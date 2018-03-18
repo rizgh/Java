@@ -17,8 +17,7 @@ phases:
 artifacts:
   files:
     - target/spring-boot-web-jsp-1.0.war
-    - scripts/start.sh
-    - scripts/stop.sh
+    - scripts
     - appspec.yml
 
   discard-paths: yes
