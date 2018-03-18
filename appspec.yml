@@ -5,14 +5,14 @@ files:
     destination: /home/ubuntu/java_app
 hooks:
   BeforeInstall:
-    - location: scripts/stop.sh
+    - location: stop.sh
       timeout: 300
       runas: root
-    - location: scripts/start.sh
+    - location: start.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/stop.sh
+    - location: stop.sh
       timeout: 300
       runas: root
 
