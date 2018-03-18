@@ -1,7 +1,7 @@
 #!/bin/bash
-if [ -f pid ]; then
-cat pid | xargs kill
-else;
+if [ -f /home/ubuntu/pid ]; then
+cat /home/ubuntu/pid | xargs kill
+else
 echo "new installation available"
 fi
 
