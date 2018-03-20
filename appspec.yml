@@ -16,15 +16,15 @@ permissions:
     mode: 777
 hooks:
   BeforeInstall:
-    - location: stop.sh
+    - location: /home/ubuntu/java_app/stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: start.sh
+    - location: /home/ubuntu/java_app/start.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: stop.sh
+    - location: /home/ubuntu/java_app/stop.sh
       timeout: 300
       runas: root
 
