@@ -3,8 +3,14 @@ os: linux
 files:
   - source: spring-boot-web-jsp-1.0.war
     destination: /home/ubuntu/java_app
+  - source: start.sh 
+    destination: /home/ubuntu/java_app
+  - source: stop.sh
+    destination: /home/ubuntu/java_app
+   
 permissions:
-  - object: /home/ubuntu
+  - object: /home/ubuntu/java_app
+    pattern: /home/ubuntu/java_app/*
     owner: root
     group: root
     mode: 777
